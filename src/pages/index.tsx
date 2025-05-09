@@ -1,15 +1,14 @@
-import Head from "next/head";
+import { Layout } from "../ui/components/layout/layout";
+import { Seo } from "../ui/components/seo/Seo";
+import { LandingPageContainer } from "../ui/modules/landing-page/landing-page.container";
 
 export default function Home() {
     return (
         <>
-            <Head>
-                <title>Coder Albert</title>
-                <meta name="description" content="description..." />
-            </Head>
-            <h1 className="text-3xl font-bold underline text-red-500">
-                Hello world!
-            </h1>
+            <Seo title="Codeur Alberto" description="description..." />
+            <Layout isDisplayBreadcrumbs={false}>
+                <LandingPageContainer />
+            </Layout>
         </>
     );
 }

@@ -6,6 +6,7 @@ class MyDocument extends Document {
       <Html lang="fr">
         <Head>
           {/* Ajoutez ici vos balises <head> supplémentaires */}
+          <link rel="icon" href="/assets/svg/logo_fsc.svg" />
         </Head>
         <body>
           <Main />
